@@ -1,0 +1,10 @@
+function [phiNorm] = NormalizeAngle(phi)
+%% Normalize phi to be between -pi and pi
+while(phi>pi)
+	phi = phi - 2*pi;
+end
+while(phi<-pi)
+	phi = phi + 2*pi;
+end
+phiNorm = phi;
+end
